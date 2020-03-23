@@ -10,21 +10,25 @@ nvm use 12.14.1
 
 ### Set up backend and database
 
-$ cd backend
-$ yarn
+```
+\$ cd backend
+\$ yarn
 \$ docker-compose up -d
 
-- wait for the database to be created. This can take a minute or two
-  $ yarn build
-$ yarn db:migrate
-  $ yarn db:seed
-$ yarn start
+# wait for the database to be created. This can take a minute or two
+\$ yarn build
+\$ yarn db:migrate
+\$ yarn db:seed
+\$ yarn start
+```
 
 ### Set up frontend
 
-$ cd frontend
-$ yarn
+```
+\$ cd frontend
+\$ yarn
 \$ yarn start
+```
 
 ## Local dev
 
