@@ -1,0 +1,15 @@
+{
+  "name": "Demo",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12.0.0 <13",
+    "npm": ">=6.5.0",
+    "yarn": ">=1.13.0"
+  },
+  "scripts": {
+    "build": "cd web-client && yarn && yarn build && cd ../landing-pages && yarn && yarn build && cd ../api && yarn && yarn build"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.3"
+  }
+}

@@ -1,0 +1,39 @@
+/* Custom Editor Dropdown Styles */
+
+.placeholder-ul {
+  visibility: hidden;
+}
+.placeholder-li:hover {
+  background: #f1f1f1;
+}
+
+.rdw-dropdown-optionwrapper {
+  z-index: 100;
+  position: relative;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.rdw-block-dropdown {
+  width: 200px;
+}
+
+.rdw-dropdown-carettoopen {
+  top: 45%;
+  right: 5%;
+}
+
+.rdw-dropdown-carettoclose {
+  top: 45%;
+  right: 5%;
+}
+
+.public-DraftStyleDefault-block {
+  margin: 0px;
+}

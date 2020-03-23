@@ -1,0 +1,6 @@
+module.exports = {
+  "migrations-path": "db/migrations",
+  "models-path": "dist/models",
+  "seeders-path": "db/seeders",
+  "config": './sequelizerc_config.js',
+}

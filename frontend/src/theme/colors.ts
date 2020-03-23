@@ -1,0 +1,17 @@
+export const colors = {
+  gray: "#dddddd",
+  darkGray: "#393939",
+  black: "#212121",
+  green: "#00d88e",
+  darkBlue: "#2c3340",
+  lightGreen: "#00d88e30",
+  red: "#ff0000",
+  white: "#FFFFFF",
+  error: "#f44336",
+  play: "blue",
+  replay: "#2196f3",
+  pause: "#FBB13A",
+  stop: "#ff0000",
+  completed: "#2944d2",
+  buttonBorder: "rgba(0,0,0,.23)",
+};

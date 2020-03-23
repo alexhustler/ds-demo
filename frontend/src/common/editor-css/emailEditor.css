@@ -1,0 +1,26 @@
+.kl-editor-toolbar {
+  padding: 6px 5px 0;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px solid #d7dee2;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #fdfdfd;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.kl-editor-primary {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  min-height: 100px;
+  padding-left: 8px;
+}
+
+.kl-wrapper-primary {
+  box-sizing: content-box;
+  border: 1px solid #d7dee2;
+  border-radius: 3px;
+}
