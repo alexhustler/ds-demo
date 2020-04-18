@@ -15,12 +15,14 @@ defmodule HelloWeb.AuthenticationController do
   end
 
   def login(conn, _params) do
-    users = []
-    json conn, users
+    # TODO check credentials
+    put_session(conn, 'isAuthenticated', 'true')
+    json conn, []
   end
 
   def logout(conn, _params) do
-    users = []
-    json conn, users
+    put_session(conn, 'isAuthenticated', 'false')
+    # TODO destroy sesison
+    json conn, []
   end
 end

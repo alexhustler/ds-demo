@@ -2,6 +2,8 @@ defmodule Hello.User do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias Hello.Repo
+
   schema "users" do
     field :firstName, :string
     field :lastName, :string
@@ -12,10 +14,12 @@ defmodule Hello.User do
     timestamps()
   end
 
-  @doc false
-  def changeset(user, attrs) do
-    user
-    |> cast(attrs, [:title])
-    |> validate_required([:title])
+  def update_user(id, isAdmin) do
+    # TODO
   end
+
+  def load_users() do
+    Hello.Repo.all(Hello.User)
+  end
+
 end
