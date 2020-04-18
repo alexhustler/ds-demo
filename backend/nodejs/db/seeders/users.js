@@ -2,7 +2,7 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.sequelize.query(
       /**
-       * username: admin@test.com
+       * emailAddress: admin@test.com
        * password: Password123!
        */
       'INSERT INTO users \
@@ -11,7 +11,7 @@ module.exports = {
     );
     await queryInterface.sequelize.query(
       /**
-       * username: bob@gmail.com
+       * emailAddress: bob@gmail.com
        * password: Password123!
        */
       'INSERT INTO users \

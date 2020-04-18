@@ -42,6 +42,20 @@ nvm use 12.14.1
 \$ yarn start
 ```
 
+### Elixir
+
+#### install Elixir 1.5 or later and Phoenix
+
+Follow the instructions to install Elixir, Erlang and Phoenix https://hexdocs.pm/phoenix/installation.html#content
+
+\$ cd backend/elixir
+\$ mix deps.get
+\$ MIX_ENV=dev mix ecto.migrate --all
+\$ MIX_ENV=dev mix run priv/repo/seeds.exs
+\$ MIX_ENV=dev mix phx.server
+
 ## Local dev
 
-Navigate to localhost:3000 and you should be able to login with { email: 'admin@test.com', password: 'Password123!' } or { email: 'bob@gmail.com', password: 'Password123!' }. There are three routes at the top level: /login, /dashboard, /admin.
+Navigate to localhost:3000 and you should see a login screen. There are three routes at the top level: /login, /dashboard, /admin.
+
+There are two users seeded in the database: { email: 'admin@test.com', password: 'Password123!' } and { email: 'bob@gmail.com', password: 'Password123!' }.
