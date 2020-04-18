@@ -16,7 +16,7 @@
 # password: Password123!
 ##
 Hello.Repo.insert!(
-  %Hello.User{firstName: "Admin", lastName: "Test", emailAddress: "admin@test.com", password: "Password123!", isAdmin: true }
+  %Hello.User{firstName: "Admin", lastName: "Test", emailAddress: "admin@test.com", password: "$2a$12$k08xu.AV0/YM5Z6pmrTmP.PW46ebJnVczc9/f7aI.8cELia3EEpvG", isAdmin: true }
 )
 
 ##
@@ -24,5 +24,5 @@ Hello.Repo.insert!(
 # password: Password123!
 ##
 Hello.Repo.insert!(
-  %Hello.User{firstName: "Bob", lastName: "Test", emailAddress: "bob@gmail.com", password: "Password123!", isAdmin: true }
+  %Hello.User{firstName: "Bob", lastName: "Test", emailAddress: "bob@gmail.com", password: "$2a$12$s2OJJzC8yyXsF75yiZl7lOXaVlkV0o/VYq9Q1Y1K40.NxMK0bBAhC", isAdmin: false }
 )

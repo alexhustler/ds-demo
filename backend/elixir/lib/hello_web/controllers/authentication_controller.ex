@@ -16,6 +16,7 @@ defmodule HelloWeb.AuthenticationController do
 
   def login(conn, _params) do
     # TODO check credentials
+    # p = Bcrypt.Base.hash_password("Password123!", Bcrypt.gen_salt(12, true))
     put_session(conn, 'isAuthenticated', 'true')
     json conn, []
   end
