@@ -2,31 +2,43 @@
 
 ## Setup
 
-### install nvm and Node version 12
+### install docker-compose
+
+Follow the instructions here https://docs.docker.com/compose/install/
+
+#### Set up database
+
+```
+\$ cd backend
+\$ docker-compose up -d
+```
+
+### Set up React frontend
+
+```
+\$ cd frontend
+\$ yarn
+\$ yarn start
+```
+
+### Nodejs
+
+#### install nvm and Node version 12
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 nvm install 12.14.1
 nvm use 12.14.1
 
-### Set up backend and database
+#### Set up backend
 
 ```
-\$ cd backend
+\$ cd backend/nodejs
 \$ yarn
-\$ docker-compose up -d
 
-# wait for the database to be created. This can take a minute or two
+# Assuming the database has already been created with docker-compose
 \$ yarn build
 \$ yarn db:migrate
 \$ yarn db:seed
-\$ yarn start
-```
-
-### Set up frontend
-
-```
-\$ cd frontend
-\$ yarn
 \$ yarn start
 ```
 
