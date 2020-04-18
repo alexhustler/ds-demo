@@ -49,7 +49,7 @@ nvm use 12.14.1
 Follow the instructions to install Elixir, Erlang and Phoenix https://hexdocs.pm/phoenix/installation.html#content
 
 \$ cd backend/elixir
-\$ mix deps.get
+\$ MIX_ENV=dev mix deps.get
 \$ MIX_ENV=dev mix ecto.migrate --all
 \$ MIX_ENV=dev mix run priv/repo/seeds.exs
 \$ MIX_ENV=dev mix phx.server

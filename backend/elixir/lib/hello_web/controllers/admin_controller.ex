@@ -7,7 +7,8 @@ defmodule HelloWeb.AdminController do
   end
 
   def getUsers(conn, _params) do
-    Repo.all(User)
+    # Repo.all(User)
+    users = []
     json conn, users
   end
 end
