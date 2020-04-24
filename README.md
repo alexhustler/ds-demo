@@ -21,15 +21,18 @@ Follow the instructions here https://docs.docker.com/compose/install/
 \$ yarn start
 ```
 
-### Nodejs
+
+### Set up backend
+
+Chose one of the following backends:
+
+### Option 1: Nodejs
 
 #### install nvm and Node version 12
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 nvm install 12.14.1
 nvm use 12.14.1
-
-#### Set up backend
 
 ```
 \$ cd backend/nodejs
@@ -42,7 +45,7 @@ nvm use 12.14.1
 \$ yarn start
 ```
 
-### Elixir
+### Option 2: Elixir
 
 #### install Elixir 1.5 or later and Phoenix
 
