@@ -45,7 +45,7 @@
     "source-map-explorer": "^1.8.0",
     "typescript": "^3.2.2",
     "universal-cookie": "^3.0.7",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "build": "react-scripts build",
